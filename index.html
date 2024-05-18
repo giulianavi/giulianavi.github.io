@@ -4,81 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="l1">Portfolio Pessoal</title>
-    <style>
-        /* Estilizando o menu */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        .sobre-mim,
-        .formacao,
-        .portfolio,
-        .contato {
-            padding: 20px;
-            margin-top: 50px; 
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            box-sizing: border-box;
-        }
-        input[type="text"]#nome,
-        input[type="text"]#sobrenome,
-        input[type="email"]#email {
-            width: calc(50% - 5px); 
-            margin-right: 10px;
-            display: inline-block;
-        }
-        input[type="text"]#sobrenome,
-        input[type="email"]#email {
-            margin-right: 0;
-        }
-        textarea {
-            width: 100%;
-            height: 100px; 
-        }
-        input[type="submit"] {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 15px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        input[type="submit"]:hover {
-            background-color: #555;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="estilo.css">
 
 <body>
     <nav class="container menu">
+        <!-- criando listas não ordenadas -->
         <ul>
-            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -87,13 +19,6 @@
 
     <div id="sobre-mim" class="sobre-mim">
         <h2 >Sobre mim</h2>
-        <style>
-            body {
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                margin:0;
-                padding:0;
-            }
-        </style>
         <img src="img\cat.png" alt="Gato" class="cat-img" width="110" margin="20px">
         <p>Olá! Meu nome é Giuliana, e eu sou uma estudante de Engenharia de Software.</p>
         <p>Meus hobbies são praticar esportes e aprender novos idiomas.</p><p>Atualmente aprendo finlandês, e já consigo entender e me comunicar com facilidade.</p>
@@ -112,11 +37,13 @@
 
     <div id="portfolio" class="portfolio">
         <h2>Portfólio</h2>
-        <p>--- Em desenvolvimento ---</p>
+        <a href="https://gitlab.com/qa2665608/trilha-qa-compass">GitLab</a>
+    </body>
     </div>
 
     <div id="contato" class="contato">
         <h2>Contato</h2>
+        <!-- criando o formulário de contato-->
         <form action="#" method="post">
             <div class="input-group">
                 <input type="text" id="nome" name="nome" required placeholder="Nome *">
